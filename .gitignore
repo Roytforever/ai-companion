@@ -21,3 +21,32 @@ memory/data/
 # OS
 .DS_Store
 Thumbs.db
+
+# 设计文档/方案/计划（不上传 GitHub）
+.design/
+
+# 本地自动习得的技能（运行期生成，类 Hermes ~/.hermes/skills）
+skills/learned/
+
+# Phase 5：MCP OAuth 令牌缓存、RL 轨迹数据（均含潜在敏感/运行期数据，不上传）
+.mcp_tokens/
+data/rl/
+rl_runs/
+
+# Phase 6（P1）：定时调度运行期数据（jobs/inbox/output，含运行结果，不上传）
+data/schedules/
+
+# Phase 7（P1b）：hooks 配置、斜杠命令运行态、浏览器截图（均不上传）
+.hooks/
+commands/
+context/
+screenshots/
+*.png
+screenshot*.png
+
+# 模型提供商插件（用户扩展点，Hermes 式 plugins/；不进仓库，仅本地自定义）
+provider_plugins/
+
+# 运行时锁文件（调度器跨进程锁，非代码）
+.scheduler.lock
+*.lock
